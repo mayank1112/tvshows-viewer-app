@@ -1,26 +1,25 @@
 body {
     font-family: arial;
-    margin: 10px;
+    margin: 10px !important;
     background-image: linear-gradient(rgba(207, 207, 207, 0), rgba(132, 132, 132, 0.16));
     background-repeat: no-repeat;
     background-size: 100% 240px;
 }
 
 h1 {
-    font-size: 19px;
-    font-weight: normal;
+    font-size: 1.1rem !important;
 }
 
 h2 {
-    font-size: 14px;
-    font-weight: normal;
+    font-size: .89rem !important;
+    font-weight: normal !important;
     color: #8d8d8d;
 }
 
 h3 {
-    font-size: 17px;
-    font-weight: normal;
-    margin-top: 40px;
+    font-size: 1rem !important;
+    font-weight: normal !important;
+    margin-top: 40px !important;
 }
 
 .tvShow {
@@ -31,7 +30,7 @@ h3 {
     padding: 10px;
     text-align: center;
     width: 200px;
-    height: 300px;
+    height: 325px;
 }
 
 .tvShowPoster {
@@ -39,16 +38,26 @@ h3 {
     border: 1px solid #dbdbdb;
     background: #f1f1f1;
     padding: 10px;
-    float: left;
-    width: 300px;
+    width: 170px;
 }
 
-.tvShowOverview {
-    width: 500px;
-    float: left;
-}
-
-.tvShow img {
+.tvShow img, .tvShowPoster img {
     width: 150px;
     height: 225px;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+.data {
+    padding: 10px;
+    border-bottom: 1px solid #7a7a7a;
+    color: #7a7a7a;
+    font-size: 11px !important;
+}
+
+.data b {
+    font-size: 20px;
+    padding-right: 20px;
 }

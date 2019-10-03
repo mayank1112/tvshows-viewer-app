@@ -3,5 +3,7 @@ export default {
   "bannerTitle": "TV show and web series database.",
   "bannerSubTitle": "Create personalised schedules. Episodes guide, cast, crew and character information.",
   "tvShowPageTitle": "Last Added Shows",
-  "homePageTitle": "Last Added Shows"
+  "homePageTitle": "Last Added Shows",
+  "genresLabel": "Genres",
+  "companiesLabel": "Production Companies",
 };

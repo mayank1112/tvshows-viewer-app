@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/sainsburrysTheme.css";
+import "../../css/sainsburysTheme.css";
 import urls from "../../constants/urls"
 import TvShowItem from './TvShowItem';
 import intl from '../../locale/enUk.js';
@@ -16,12 +16,12 @@ class Home extends React.Component {
   }
   render() {
     const { tvShows } = this.state;
+    const { bannerTitle, bannerSubTitle, homePageTitle } = intl;
     return (
         <React.Fragment>
-          <h1>{intl.heading}</h1>
-          <h2>{intl.bannerTitle}</h2>
-          <h2>{intl.bannerSubTitle}</h2>
-          <h3>{intl.homePageTitle}</h3>
+          <h2>{bannerTitle}</h2>
+          <h2>{bannerSubTitle}</h2>
+          <h3>{homePageTitle}</h3>
           {
             tvShows.length > 0
                 && tvShows.map(
