@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "nodemon src/server/server.js > /dev/null & react-scripts start",
+    "start": "npm run build && nodemon src/server/server.js",
     "start:client-only": "react-scripts start",
-    "start:server-only": "nodemon src/server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -33,6 +32,7 @@
     "bootstrap": "^4.3.1",
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.14.0",
+    "hapi-static-files": "^2.0.0",
     "jest-dom": "4.0.0",
     "jest-enzyme": "7.1.1",
     "node-sass": "4.12.0",
@@ -50,6 +50,10 @@
     "redux": "4.0.4",
     "redux-thunk": "2.3.0",
     "styled-components": "4.3.2",
-    "wreck": "^14.2.0"
+    "wreck": "^14.2.0",
+    "inert": "latest"
+  },
+  "devDependencies": {
+    "hapi": "^18.1.0"
   }
 }
