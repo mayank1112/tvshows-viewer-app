@@ -9,8 +9,9 @@ const server = new Hapi.Server({
     port: properties.port,
     routes: {
         files: {
-            relativeTo: Path.join(__dirname, 'build')
-        }
+            relativeTo: Path.join(__dirname, 'build'),
+        },
+        cors: true,
     }
 });
 

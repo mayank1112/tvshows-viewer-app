@@ -10,12 +10,14 @@ const GridView = ({ tvShows }) => (
 );
 
 GridView.propTypes = {
-    tvShows: PropTypes.arrayOf({
-        id: PropTypes.number.isRequired,
-        title: PropTypes.string.isRequired,
-        poster_path: PropTypes.string.isRequired,
-        vote_average: PropTypes.number.isRequired,
-    }).isRequired,
+    tvShows: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            title: PropTypes.string.isRequired,
+            poster_path: PropTypes.string.isRequired,
+            vote_average: PropTypes.number.isRequired,
+        })
+    ).isRequired,
 };
 
 export default GridView;

@@ -12,7 +12,7 @@ const Data = ({ name, type }) => (
 
 Data.propTypes = {
     name: PropTypes.string.isRequired,
-    type: PropTypes.oneOfType([
+    type: PropTypes.oneOf([
         'GENRE',
         'COMPANY',
     ]).isRequired,
