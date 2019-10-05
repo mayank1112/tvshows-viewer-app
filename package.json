@@ -52,9 +52,8 @@
     "redux-thunk": "2.3.0",
     "styled-components": "4.3.2",
     "wreck": "^14.2.0",
-    "inert": "latest"
-  },
-  "devDependencies": {
-    "hapi": "^18.1.0"
+    "inert": "latest",
+    "hapi": "^18.1.0",
+    "jest-fetch-mock": "^2.1.2"
   }
 }

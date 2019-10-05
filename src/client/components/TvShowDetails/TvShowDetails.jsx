@@ -5,24 +5,22 @@ import "../../css/sainsburysTheme.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Poster from "../shared/Poster";
 import Rating from "../shared/Rating";
-import intl from "../../locale/enUk";
+import intl from "../../locale/en-UK";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Data from "./Data";
+import get from "../../utils/get";
 
 class TvShowDetails extends React.Component {
   constructor(props) {
     super(props);
     this.state = { tvShow: {} };
   }
-
-  componentDidMount() {
-    fetch(urls.show(this.props.match.params.showId))
-        .then(response => response.json())
-        .then(tvShow => this.setState({ tvShow } ));
-  }
-
+  componentDidMount = async () => {
+      const tvShow = await get(urls.show(this.props.match.params.showId));
+      this.setState({ tvShow });
+  };
   render() {
     const { id, title, overview, poster_path, vote_average, genres, production_companies } = this.state.tvShow;
     const { genresLabel, companiesLabel } = intl;
