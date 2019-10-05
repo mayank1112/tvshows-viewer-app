@@ -2,18 +2,20 @@ import React from "react";
 import "../../css/sainsburysTheme.css";
 import urls from "../../constants/urls"
 import GridView from './GridView';
-import intl from '../../locale/enUk.js';
+import intl from '../../locale/en-UK.js';
+import get from '../../utils/get';
 
 class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = { tvShows: [] };
   }
-  componentDidMount() {
-    fetch(urls.shows)
-        .then(response => response.json())
-        .then(tvShows => this.setState({ tvShows: tvShows.results }));
-  }
+
+  componentDidMount = async() => {
+    const tvShowsInfo = await get(urls.shows);
+    this.setState({ tvShows: tvShowsInfo.results });
+  };
+
   render() {
     const { tvShows } = this.state;
     const { bannerTitle, bannerSubTitle, homePageTitle } = intl;
