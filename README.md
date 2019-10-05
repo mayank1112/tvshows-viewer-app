@@ -1,4 +1,4 @@
-## Setup react client and nodejs server to run netflix(TV Show Viewer) App:
+## Setup react client and nodejs server to run TV Show Viewer App:
 
 In the project directory, you can run:
 
