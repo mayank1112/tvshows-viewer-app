@@ -10,10 +10,12 @@ class Home extends React.Component {
     super(props);
     this.state = { tvShows: [] };
   }
+
   componentDidMount = async() => {
     const tvShowsInfo = await get(urls.shows);
     this.setState({ tvShows: tvShowsInfo.results });
   };
+
   render() {
     const { tvShows } = this.state;
     const { bannerTitle, bannerSubTitle, homePageTitle } = intl;

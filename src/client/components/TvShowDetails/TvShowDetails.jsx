@@ -17,10 +17,12 @@ class TvShowDetails extends React.Component {
     super(props);
     this.state = { tvShow: {} };
   }
+
   componentDidMount = async () => {
       const tvShow = await get(urls.show(this.props.match.params.showId));
       this.setState({ tvShow });
   };
+
   render() {
     const { id, title, overview, poster_path, vote_average, genres, production_companies } = this.state.tvShow;
     const { genresLabel, companiesLabel } = intl;
