@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter , Switch, Route } from "react-router-dom";
-import Home from "./client/components/Home/Home";
-import Header from "./client/components/shared/Header";
-import TvShowDetails from "./client/components/TvShowDetails/TvShowDetails";
-import paths from "./client/constants/paths";
+import Home from "./components/Home/Home";
+import Header from "./components/shared/Header";
+import TvShowDetails from "./components/TvShowDetails/TvShowDetails";
+import paths from "./constants/paths";
 
 ReactDOM.render(
     (
