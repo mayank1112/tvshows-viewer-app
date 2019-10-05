@@ -10,9 +10,9 @@ Navigate to the folder by executing `cd tvshows-viewer-app`. Install the require
 
 To run the app in the production optimized mode at [http://localhost:3000] (http://localhost:3000), execute below command:
 
-### `npm run start`
+### `npm start`
 
 (Use `npm run start:server-only` and `npm run client-only` for development with hot reloading in your local)
 
 Run Unit tests:
-### `npm run test`
+### `npm test`
