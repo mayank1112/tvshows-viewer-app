@@ -2,9 +2,9 @@
 
 In the project directory, you can run:
 
-### `git clone https://github.com/mayank1112/netflix.git`
+### `git clone https://github.com/mayank1112/tvshows-viewer-app.git`
 
-Navigate to the folder by executing `cd netflix`. Install the required dependencies:
+Navigate to the folder by executing `cd tvshows-viewer-app`. Install the required dependencies:
 
 ### `npm install`
 
