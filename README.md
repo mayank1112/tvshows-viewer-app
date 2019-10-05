@@ -1,14 +1,15 @@
-## Setup react client and nodejs server
+## Setup react client and nodejs server to run netflix(TV Show Viewer) App:
 
 In the project directory, you can run:
 
-### `git clone https://github.com/mayank1112/netflix.git`
+### `git clone https://github.com/mayank1112/tvshows-viewer-app.git`
 
-Install the required dependencies:
+Navigate to the folder by executing `cd tvshows-viewer-app`. Install the required dependencies:
 
 ### `npm install`
 
-Run the app in the production optimized mode at [http://localhost:3000](http://localhost:3000):
+To run the app in the production optimized mode at [http://localhost:3000] (http://localhost:3000), execute below command:
+
 ### `npm run start`
 
 (Use `npm run start:server-only` and `npm run client-only` for development with hot reloading in your local)
