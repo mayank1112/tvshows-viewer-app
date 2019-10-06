@@ -1,5 +1,5 @@
 const paths = require('../constants/paths');
-const tvShowsController = require('../controllers/tvShow');
+const tvShowsController = require('../controllers/tvShowsController');
 
 module.exports = [
     {
