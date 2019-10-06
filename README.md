@@ -12,7 +12,7 @@ To run the app in the production optimized mode at [http://localhost:8443] (http
 
 ### `npm run start`
 
-(Use `npm run start:server-only` and `npm run client-only` for development with hot reloading in your local). App will open automatically in browser on port 3000
+(Use `npm run start:server-only` and `npm run client-only` for development with hot reloading in your local. App will open automatically in browser on port 3000)
 
 Run Unit tests:
 ### `npm run test`
