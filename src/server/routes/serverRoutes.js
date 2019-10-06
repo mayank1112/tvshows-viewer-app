@@ -1,5 +1,5 @@
 const paths = require('../constants/paths');
-const tvShowsController = require('../controllers/tvShow');
+const tvShowsController = require('../controllers/tvShowsController');
 
 module.exports = [
     {
@@ -14,12 +14,7 @@ module.exports = [
     },
     {
         method: 'GET',
-        path: paths.staticCss,
-        handler: tvShowsController.staticCss,
-    },
-    {
-        method: 'GET',
-        path: paths.staticJs,
-        handler: tvShowsController.staticJs,
+        path: paths.staticFiles,
+        handler: tvShowsController.staticFiles,
     },
 ];
