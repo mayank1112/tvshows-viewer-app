@@ -9,5 +9,14 @@ module.exports = {
   getTvShow: async (request) => {
         const response = await Wreck.request('get', urls.show(request.params.showId));
         return await Wreck.read(response);
-  }
+  },
+  home: (request, response) => {
+    return response.file("../../../build/index.html", { confine: false });
+  },
+  staticJs: (request, response) => {
+    return response.file("../../../build/static/js/" + request.params.file, { confine: false });
+  },
+  staticCss: (request, response) => {
+      return response.file("../../../build/static/css/" + request.params.file, { confine: false });
+  },
 };
