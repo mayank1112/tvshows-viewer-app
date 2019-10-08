@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, lazy } from 'react';
 import PropTypes from 'prop-types';
 import urls from "../../constants/urls"
 import "../../css/sainsburysTheme.css";
@@ -11,6 +11,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Data from "./Data";
 import get from "../../utils/get";
+const OtherComponent = lazy(() => import('./OtherComponent'));
 
 class TvShowDetails extends React.Component {
   constructor(props) {
@@ -29,6 +30,9 @@ class TvShowDetails extends React.Component {
     if(id) {
         return (
             <React.Fragment>
+                <Suspense fallback={<div>Loading...</div>}>
+                    <OtherComponent />
+                </Suspense>
                 <Container>
                     <Row>
                         <Col>
